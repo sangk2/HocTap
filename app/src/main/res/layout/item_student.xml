@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#6ABCCF"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="Mã SV : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvcode"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvstudentName"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Tên Đăng kí"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/studentinformation"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/search"/>
+
+    <ImageButton
+        android:id="@+id/studentupdate"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_update"/>
+
+    <ImageButton
+        android:id="@+id/studentdelete"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_delete"/>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".khoahoc.student.UpdateStudentActivity">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:textColor="#FF9800"
+        android:text=" Cập Nhật\nĐăng Ký Khóa Học"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/EditTextStudentNameUpdate"
+        android:hint="Tên Sinh Viên"
+        android:layout_width="300dp"
+        android:layout_height="60dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Giới Tính"/>
+
+    <RadioGroup
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="70dp">
+
+        <RadioButton
+            android:id="@+id/radiobuttonMaleUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nam"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/black"
+            android:text="Nữ"
+            android:id="@+id/radiobuttonFeMaleUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/EditTextStudentCodeUpdate"
+        android:hint="mã sinh viên"
+        android:layout_width="300dp"
+        android:layout_height="60dp"/>
+    <EditText
+        android:inputType="datetime"
+        android:layout_marginTop="10dp"
+        android:id="@+id/EditTextStudentBirthdayUpdate"
+        android:hint="Ngày sinh"
+        android:layout_width="300dp"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+            android:layout_weight="1"
+            android:background="@drawable/background_button"
+            android:backgroundTint="#ccc"
+            android:textColor="@color/white"
+            android:text="Hủy"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdateStudent"
+            android:layout_weight="1"
+            android:background="@drawable/background_button"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:text="Lưu"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>
